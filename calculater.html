@@ -4,46 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculater.css">   
+    <link rel="stylesheet" href="calculater.css">
+    <script src="calculater.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
 
-    <!-- Create table -->
-    <table id="calcu">
-        <tr>
-            <td colspan="3">
-                <input type="text" id="result">
-            </td>
-            <td><input type="button" value="c"></td>
-        </tr>
-
-        <tr>
-            <td><input type="button" value="1"></td>
-            <td><input type="button" value="2"></td>
-            <td><input type="button" value="3"></td>
-            <td><input type="button" value="/"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="4"></td>
-            <td><input type="button" value="5"></td>
-            <td><input type="button" value="6"></td>
-            <td><input type="button" value="*"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="7"></td>
-            <td><input type="button" value="8"></td>
-            <td><input type="button" value="9"></td>
-            <td><input type="button" value="-"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="0"></td>
-            <td><input type="button" value="."></td>
-            <td><input type="button" value="="></td>
-            <td><input type="button" value="+"></td>
-        </tr>
-    </table>
+    <div class="calculator">
+        <div class="header">
+            <div class="input">
+               <span class="display"></span>
+            </div>
+        </div>
+        <div class="keys">
+            <div class="row">
+                <div class="number">
+                    <span class="num">7</span>
+                    <span class="num">8</span>
+                    <span class="num">9</span>
+                </div>
+                <div class="symbol">
+                    <span class ="ope">÷</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <span class="num">4</span>
+                    <span class="num">5</span>
+                    <span class="num">6</span>
+                </div>
+                <div class="symbol">
+                    <span class ="ope">-</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <span class="num">1</span>
+                    <span class="num">2</span>
+                    <span class="num">3</span>
+                </div>
+                <div class="symbol">
+                    <span class ="ope">+</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="number">
+                    <span class="dull">AC</span>
+                    <span class="num">0</span>
+                    <span class="ope">x</span>
+                </div>
+                <div class="symbol action">
+                    <span class ="ans">=</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
